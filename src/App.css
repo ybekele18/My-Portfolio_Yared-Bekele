@@ -1,0 +1,55 @@
+.container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between portfolio and profile */
+  align-items: flex-start; /* Align items at the start */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Max width for the container */
+  margin: 0 auto; /* Center the container */
+  padding: 2rem; /* Padding around the container */
+}
+.portfolio {
+  flex: 1; 
+  margin-right: 2rem; 
+}
+.profile {
+  flex-shrink: 0; 
+}
+.profile-pic {
+  width: 200px; 
+  height: auto; 
+  border-radius: 50%; 
+}
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  gap: 1rem; 
+  margin: 1rem 0; 
+}
+
+.social-icons img {
+  width: 30px; 
+  height: 30px; 
+}
+.contact-info {
+  text-align: center;
+  margin-bottom: 1rem; 
+}
+.card, .projects {
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  padding: 1.5rem;
+  margin-bottom: 1.5rem; 
+}
+.modal {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  z-index: 1000; 
+}
